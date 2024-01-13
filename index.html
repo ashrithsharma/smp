@@ -7,6 +7,10 @@
     
 </head>
 <style>
+    html{
+        width: auto;
+        height: auto;
+    }
   body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -26,8 +30,7 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         height: auto; /* Adjust as needed for your content */
-        width: auto;
-        
+        width:fit-content;
     }
     /* Other mobile-specific styles */
 }
@@ -36,7 +39,7 @@ body {
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
     body {
         height: 100vh; /* 100% of the viewport height */
-        width:auto;
+        width: fit-content;
     }
     /* Other tablet-specific styles */
 }
@@ -45,14 +48,13 @@ body {
 @media only screen and (min-width: 1201px) {
     body {
         height: 100vh; /* 100% of the viewport height */
-        width:auto;
     }
     /* Other desktop-specific styles */
 }
 
 
 header {
-    background-color:white;
+    background-color:#141313;
     color:#333  ;
     padding: 20px;
     text-align: center;
@@ -96,14 +98,16 @@ nav a:hover {
     color:#1d28a9;
 }
 
-section {
-    max-width: 700px;
+section 
+ {
+    max-width: 620px;
     margin: 40px auto;
     padding: 20px;
-    background-color:#ffffff;
+    background-color:beige;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 50px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
 }
 
 section:hover {
@@ -134,15 +138,20 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
 footer {
     text-align: center;
     padding: 20px;
-    background-color:#ffffff ;
+    background-color:beige ;
     color:#141313;
     opacity: 0;
     animation: fadeIn 1s ease-in-out forwards;
     animation-delay: 0.5s;
 }
 .images{
-border-radius: 20px;
-    display:inline;
+border-radius: 50px;
+display: inline;
+
+}
+section .images{
+    display: inline-table;
+    background-color: #ffffff;
 }
 h1,h2,h3{
     font-family: 'Times New Roman', Times, serif;
@@ -209,9 +218,7 @@ nav ul li {
 <a href="https://www.godrejjersey.com/">
     <img srcset="https://m.media-amazon.com/images/I/41Anqhn0SnL._SX300_SY300_QL70_ML2_.jpg" height="210" width="210" >
 </a>
-<a href="https://amul.com/products/milk.php">
-    <img srcset="https://tiimg.tistatic.com/fp/1/007/690/100-fresh-and-natural-healthy-full-cream-amul-milk-for-multipurpose-use-233.jpg" height="190" width="180">
-</a>
+
 </div>
 </section>
     <section id="home">
@@ -221,13 +228,13 @@ nav ul li {
 
     <section id="about">
         <h2>About Us</h2>
-        <p>We as an retail vendors try to reach the high quality milk & milk related products<br>ensure the proper producer-consumer needs.</p>
+        <p>We as an retail vendors try to reach the high quality milk & milk related products to ensure the proper producer-consumer needs.</p>
     </section>
 
     <section id="services">
         <h2>Our Services</h2>
-        <ul><li><h3>Home deliveries</h3></li>
-            <li><h3>Pay as you Go basis</h3></li>
+        <ul><li>Home deliveries</li>
+            <li>Pay as you Go basis</li>
         </ul>
     </section>
 
