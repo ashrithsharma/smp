@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP</title>
+    
+</head>
+<style>
+  body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://media2.giphy.com/media/l2SpWHtayCct5eBhe/source.gif');
+    background-size: cover;
+    color: #333;
+
+}
+/* Default styles for all screen sizes */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Styles for screens with a width of 600 pixels or less (typical for mobile devices) */
+@media only screen and (max-width: 600px) {
+    body {
+        height: auto; /* Adjust as needed for your content */
+    }
+    /* Other mobile-specific styles */
+}
+
+/* Styles for screens with a width between 601 and 1200 pixels (typical for tablets) */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+    body {
+        height: 100vh; /* 100% of the viewport height */
+    }
+    /* Other tablet-specific styles */
+}
+
+/* Styles for screens with a width greater than 1200 pixels (typical for laptops and desktops) */
+@media only screen and (min-width: 1201px) {
+    body {
+        height: 100vh; /* 100% of the viewport height */
+    }
+    /* Other desktop-specific styles */
+}
+
+
+header {
+    background-color:white;
+    color:#333  ;
+    padding: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    animation-name: example;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+nav a {
+    text-decoration: none;
+    color: #141313;
+    transition: color ease-in-out;
+    animation-name: example;
+}
+
+nav a:hover {
+    color:#1d28a9;
+}
+
+section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color:#ffffff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.35);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+section h2 {
+    color:#141313;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+.p{
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color:#ffffff ;
+    color:#141313;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+.images{
+border-radius: 20px;
+}
+h1,h2,h3{
+    font-family: 'Times New Roman', Times, serif;
+    color:#141313;
+    display: inline-table;
+}
+
+header {
+    background-color:#ffffff;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;     justify-content:space-between; /* Space elements evenly */
+    align-items: center; 
+    animation: fadeIn 1s ease-in-out;
+    border: #ffffff;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox for navigation */
+    animation-name: keyframes;
+}
+@keyframes example {
+  from {font-size:smaller;}
+  to {font-size: 15px;}
+}
+
+nav ul li {
+    margin-right: 20px;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    animation-delay: 0.5s;
+}
+
+/* ... (rest of your styles) */
+
+</style>
+<body>
+
+    <header>
+        <h1 style="color: darkred;"></color>SURESH MILK POINT</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<section id="images" >
+
+    <div id="images">
+        <a href="https://vijayadairy.telangana.gov.in/Default.aspx">
+            <img srcset="https://m.media-amazon.com/images/I/81jBF9Sg8vL._SL1500_.jpg"height="200" width="200" />
+            </a>
+          
+    <a href="https://www.heritagefoods.in/">
+    <img srcset="https://ik.imagekit.io/dunzo/MVNzOGxjdTN2UlFGSVJPM0lwYSsvQT09-product_image.jpg?tr=w-488,h-488,cm-pad_resize" height="190" width="190">
+</a>
+<a href="https://www.godrejjersey.com/">
+    <img srcset="https://m.media-amazon.com/images/I/41Anqhn0SnL._SX300_SY300_QL70_ML2_.jpg" height="210" width="210" >
+</a>
+<a href="https://amul.com/products/milk.php">
+    <img srcset="https://tiimg.tistatic.com/fp/1/007/690/100-fresh-and-natural-healthy-full-cream-amul-milk-for-multipurpose-use-233.jpg" height="190" width="180">
+</a>
+</div>
+</section>
+    <section id="home">
+        <h3 style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;">We deliver & take orders which are high quality products and approved by the Government of India</h3>
+        <p></p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We as an retail vendors try to reach the high quality milk & milk related products to ensure the proper producer-consumer needs.</p>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <ul><li><h3>Home deliveries</h3></li>
+            <li><h3>Pay as you Go basis</h3></li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for more information.</p>
+        <div class="list" style="display: inline;">
+           <hr> 9703727111 <hr>
+           8008968480 <hr>8498082711
+        </div>
+    </section>
+
+    <footer>
+        <p>We accept bulk orders,for queries please contact for concerned contact information</p>
+    </footer>
+
+</body>
+</html>
